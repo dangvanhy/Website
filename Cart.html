@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Cart.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-0 p-0 font-[Roboto] bg-[white] h-[100vh] text-[13px]">
+    <script src="./Cart.js"></script>
+
+    <!-- All content -->
+    <div class="flex justify-center items-center flex-col w-full h-fit">
+        <!-- Header -->
+        <div class="w-full font-bold">
+
+            <!-- Pre Header -->
+            <div class="text-center leading-[16px] bg-[#F9F86C] pt-[7px] pb-[7px] w-full text-[13px] font-bold">
+                Khám phá BST Thu Đông tại đây nhé
+            </div>
+
+            <!-- Pos Header -->
+            <div class="w-full flex flex-row pt-[10px] pb-[10px] justify-center items-center gap-x-[450px]">
+
+                <!-- Icon -->
+                <div class="w-[95px] h-[36px]">
+                    <img class="cursor-pointer" src="./assets/logo-coolmate.svg" alt="logo-coolmate">
+                </div>
+
+                <!-- Main Menu -->
+                <div class="w-fit flex flex-row gap-x-[60px] font-bold">
+                    <div class="cursor-pointer" onclick="Home()">
+                        Home
+                    </div>
+                    <div class="cursor-pointer" onclick="Product()">
+                        Product
+                    </div>
+                    <div class="cursor-pointer" onclick="AboutCoolmate()">
+                        About Coolmate
+                    </div>
+                    <div class="text-[red] cursor-pointer" onclick="Cart()">
+                        Cart    
+                    </div>
+                </div>
+
+                <!-- List Icons -->
+                <div class="flex flex-row gap-x-[20px]">
+                    <div class="h-[20px] w-[20px]">
+                        <img class="w-full h-full object-fill" src="./assets/icon-search.svg" alt="icon-search">
+                    </div>
+                    <div class="h-[20px] w-[20px]">
+                        <img class="w-full h-full object-fill" src="./assets/icon-account.svg" alt="icon-account">
+                    </div>
+                    <div class="h-[20px] w-[20px]">
+                        <img class="w-full h-full object-fill" src="./assets/icon-cart.svg" alt="icon-cart">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Line -->
+            <div class="h-[1px] w-full bg-[#D9D9D9]"/>
+        </div>
+
+        <!-- All content -->
+        <div class="flex flex-row">
+
+            <!-- Left Content -->
+            <div class="w-[55%] py-[2vh] border-r-[1px] border-[#D9D9D9] border-solid relative text-[17px] pl-[2vw] pr-[1vw]">
+
+                <!-- Popup -->
+                <div class="absolute top-[8%] right-[3%]">
+                    <div class="text-[13px] ">
+                        Bạn đã có tài khoản? <span class="cursor-pointer text-[#4083ff] font-normal">Đăng nhập ngay</span>
+                    </div>
+                </div>
+
+
+                <!-- Transportation -->
+                <div class="flex flex-col gap-y-[2vh] font-normal">
+
+                    <!-- Title -->
+                    <div class="font-extrabold text-[30px] mb-[1vh]">
+                        Thông tin vận chuyển
+                    </div>
+
+                    <!-- Line 1 -->
+                    <div class="flex flex-row gap-x-[1vw]">
+                        <input class="DetailInput w-[55%]" type="text" placeholder="Họ tên">
+                        <input class="DetailInput w-[45%]" type="text" placeholder="Số điện thoại">
+                    </div>
+
+                    <!-- Line 2 -->
+                    <div class="flex flex-row gap-x-[1vw]">
+                        <input class="DetailInput w-full" type="text" placeholder="Email">
+                    </div>
+
+                    <!-- Line 3 -->
+                    <div class="flex flex-row gap-x-[1vw]">
+                        <input class="DetailInput w-[55%]" type="text" placeholder="Địa chỉ">
+                    </div>
+
+                    <!-- Line 4 -->
+                    <div class="flex flex-row gap-x-[1vw]">
+                        <input class="DetailInput w-full" type="text" placeholder="Ghi chú thêm">
+                    </div>
+                </div>
+
+                <!-- Kind of payment -->
+                <div class="flex flex-col gap-y-[1.5vh] mt-[4vh]">
+
+                    <!-- Title -->
+                    <div class="font-extrabold text-[30px] mb-[1vh]">
+                        Hình thức thanh toán
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Content -->
+            <div class="w-[45%] py-[2vh] pl-[1vw]">
+
+                <!-- Title -->
+                <div class="font-extrabold text-[#000] text-[30px] my-[2vh]">
+                    Giỏ hàng
+                </div>
+
+                <!-- Code -->
+                <div class="flex flex-row gap-x-[1.5vw]">
+
+                    <!-- Discount Code -->
+                    <div class="w-[17vw] border-[3px] rounded-full border-solid border-[#000] cursor-pointer hover:bg-[#b5b2b2]">
+
+                        <!-- ACTIVE -->
+                        <div class="py-[1vh] px-[3vw]">
+                            <div class="text-[18px]">
+                                ACTIVE
+                            </div>
+                            <div class="text-[13px] text-[#000] font-normal mt-[0.5vh]">
+                                Giảm 50k cho đơn gồm các sản phẩm thể thao từ 300k 
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Discount Code -->
+                    <div class="w-[21vw] border-[3px] rounded-full border-solid border-[#000] cursor-pointer hover:bg-[#b5b2b2]">
+
+                        <!-- CHAOBAN -->
+                        <div class="py-[1vh] px-[3vw]">
+                            <div class="text-[18px]">
+                                CHAOBAN
+                            </div>
+                            <div class="text-[13px] text-[#000] font-normal mt-[0.5vh]">
+                                Giảm 50% tối đa 100k cho đơn hàng đầu tiên tại Coolmate tính trên giá gốc
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Input code -->
+                <div class="w-[90%] h-[6vh] bg-[#D9D9D9] my-[3vh] rounded-full text-[#fff] relative hover:bg-black cursor-pointer">
+                    <input class="Input" type="text" placeholder="Mã giảm giá">
+                    <div class="absolute text-[16px] font-normal top-[23.5%] right-[7%]">
+                        Áp dụng
+                    </div>
+                </div>
+
+                <!-- Line -->
+                <div class="w-[90%] h-[0.3vh] bg-[#D9D9D9] my-[1vh]"></div>
+
+                <!-- Detail prices -->
+                <div class="flex flex-col gap-y-[1vh] py-[2vh] w-[90%] pl-[1vh] text-[16px] font-normal">
+
+                    <!-- Temp price -->
+                    <div class="flex flex-row">
+                        
+                        <!-- Title -->
+                        <div class="w-[50%] flex justify-start">
+                            Tạm tính
+                        </div>
+
+                        <div class="w-[50%] flex justify-end" id="TempPrice">
+                            0đ
+                        </div>
+                    </div>
+
+                    <!-- Temp price -->
+                    <div class="flex flex-row">
+                        
+                        <!-- Title -->
+                        <div class="w-[50%] flex justify-start">
+                            Giảm giá
+                        </div>
+
+                        <div class="w-[50%] flex justify-end" id="Discount">
+                            0đ
+                        </div>
+                    </div>
+
+                    <!-- Delivery charges -->
+                    <div class="flex flex-row">
+                        
+                        <!-- Title -->
+                        <div class="w-[50%] flex justify-start">
+                            Phí giao hàng
+                        </div>
+
+                        <div class="w-[50%] flex justify-end" id="Discount">
+                            +25.000đ
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Line -->
+                <div class="w-[90%] h-[0.3vh] bg-[#D9D9D9] my-[1vh]"></div>
+
+                <!-- Sum -->
+                <div class="flex flex-col gap-y-[1vh] py-[2vh] w-[90%] pl-[1vh] text-[16px] font-normal">
+
+                    <!-- Sum -->
+                    <div class="flex flex-row">
+                        
+                        <!-- Title -->
+                        <div class="w-[50%] flex justify-start">
+                            Tổng
+                        </div>
+
+                        <div class="w-[50%] flex justify-end" id="Discount">
+                            25.000đ
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="w-full h-fit flex flex-row justify-center items-start bg-[#000] py-[25px]">
+            <div class="w-[16%] h-fit flex flex-col gap-y-[20px]">
+                <div class="text-[#fff] font-bold text-[13px]">
+                    Khám phá COOLMATE
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Áo Polo
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Áo T-shirt
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Áo Sơ mi
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Quần
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Tất (Vớ)
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Mũ (Nón)
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Phụ Kiện Khác
+                </div>
+            </div>
+    
+            <div class="w-[16%] h-fit flex flex-col gap-y-[15px]">
+                <div class="text-[#fff] font-bold text-[13px]">
+                    Dịch vụ khách hàng
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Hỏi đáp - FAQs
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Chính sách đổi trả 60 ngày
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Thành viên Coolclub
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Khách hàng hài lòng 100%
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Chính sách khuyến mãi
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Chính sách giao hàng
+                </div>
+                <div class="text-[#fff] font-bold text-[13px] mt-[10px]">
+                    Kiến thức mặc đẹp
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Hướng dẫn chọn size
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Blog
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Group mặc đẹp sống chất
+                </div>
+            </div>
+
+            <div class="w-[16%] h-fit flex flex-col gap-y-[15px]">
+                <div class="text-[#fff] font-bold text-[13px]">
+                    Tài liệu - Tuyển dụng
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Tuyển dụng
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Đăng ký bản quyền
+                </div>
+                <div class="text-[#fff] font-bold text-[13px] mt-[10px]">
+                    Về COOLMATE
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Câu chuyện về Coolmate
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Nhà máy
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    CoolClub
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Care & Share
+                </div>
+            </div>
+
+            <div class="w-[14%] h-fit flex flex-col gap-y-[15px]">
+                <div class="text-[#fff] font-bold text-[13px]">
+                    Địa chỉ liên hệ
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    HUB Hà Nội: Số 103, Đường Vạn Phúc, Phường Vạn Phúc, Quận Hà Đông, TP. Hà Nội
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    HUB Tp HCM: Lầu 1, Số 163 Trần Trọng Cung, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh
+                </div>
+            </div>
+
+            <div class="w-[30%] h-fit flex flex-col gap-y-[15px] pl-[50px]">
+                <div class="text-[#fff] font-extrabold text-[20px]">
+                    COOLMATE lắng nghe bạn!
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ khách hàng để có thể nâng cấp trải nghiệm dịch vụ và sản phẩm tốt hơn nữa.
+                </div>
+                <div class="bg-[#2f5acf] text-[#fff] w-fit text-[15px] px-[40px] font-bold py-[13px] rounded-full my-[20px] hover:bg-white hover:text-[#000]">
+                    Gửi Ý Kiến
+                </div>
+
+                <div class="flex flex-row w-full items-center gap-x-[20px]">
+                    <div class="w-[30px] h-fit">
+                        <img class="w-full h-full object-fill" src="./assets/icon-hotline.svg" alt="icon-hotline">
+                    </div>
+                    <div class="text-[#fff] font-bold text-[15px]">
+                        Hotline <br/> 1900.272737 (028.7777.2737)
+                    </div>
+                </div>
+
+                <div class="flex flex-row w-full items-center gap-x-[20px]">
+                    <div class="w-[30px] h-fit">
+                        <img class="w-full h-full object-fill" src="./assets/icon-email.svg" alt="icon-email">
+                    </div>
+                    <div class="text-[#fff] font-bold text-[15px]">
+                        Email <br/> Cool@coolmate.me
+                    </div>
+                </div>
+
+                <div class="flex flex-row gap-x-[80px] items-center mt-[20px]">
+                    <img src="./assets/icon-facebook.svg" alt="icon-facebook">
+                    <img src="./assets/icon-instar.svg" alt="icon-instar">
+                    <img src="./assets/icon-youtube.svg" alt="icon-youtube">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
