@@ -163,5 +163,5 @@ function AboutCoolmate(){
 }
 
 function Product(){
-    window.location.href = "file:///D:/workspace/Website/Home.html";
+    window.location.href = "file:///D:/workspace/Website/Product.html";
 }

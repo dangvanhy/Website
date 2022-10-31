@@ -25,7 +25,7 @@
             <div class="w-full flex flex-row pt-[10px] pb-[10px] justify-center items-center gap-x-[450px]">
 
                 <!-- Icon -->
-                <div class="w-[95px] h-[36px]">
+                <div class="w-[95px] h-[36px]" onclick="Home()">
                     <img class="cursor-pointer" src="./assets/logo-coolmate.svg" alt="logo-coolmate">
                 </div>
 
@@ -48,13 +48,13 @@
                 <!-- List Icons -->
                 <div class="flex flex-row gap-x-[20px]">
                     <div class="h-[20px] w-[20px]">
-                        <img class="w-full h-full object-fill" src="./assets/icon-search.svg" alt="icon-search">
+                        <img class="w-full h-full object-fill cursor-pointer" src="./assets/icon-search.svg" alt="icon-search">
                     </div>
                     <div class="h-[20px] w-[20px]">
-                        <img class="w-full h-full object-fill" src="./assets/icon-account.svg" alt="icon-account">
+                        <img class="w-full h-full object-fill cursor-pointer" src="./assets/icon-account.svg" alt="icon-account">
                     </div>
-                    <div class="h-[20px] w-[20px]">
-                        <img class="w-full h-full object-fill" src="./assets/icon-cart.svg" alt="icon-cart">
+                    <div class="h-[20px] w-[20px]" onclick="Cart()">
+                        <img class="w-full h-full object-fill cursor-pointer" src="./assets/icon-cart.svg" alt="icon-cart">
                     </div>
                 </div>
             </div>
@@ -70,9 +70,9 @@
             <div class="w-[55%] py-[2vh] border-r-[1px] border-[#D9D9D9] border-solid relative text-[17px] pl-[2vw] pr-[1vw]">
 
                 <!-- Popup -->
-                <div class="absolute top-[8%] right-[3%]">
+                <div class="absolute top-[4%] right-[3%]">
                     <div class="text-[13px] ">
-                        Bạn đã có tài khoản? <span class="cursor-pointer text-[#4083ff] font-normal">Đăng nhập ngay</span>
+                        Bạn đã có tài khoản? <span class="cursor-pointer text-[#4083ff] font-normal">Đăng nhập ngay</span>
                     </div>
                 </div>
 
@@ -82,13 +82,13 @@
 
                     <!-- Title -->
                     <div class="font-extrabold text-[30px] mb-[1vh]">
-                        Thông tin vận chuyển
+                        Thông tin vận chuyển
                     </div>
 
                     <!-- Line 1 -->
                     <div class="flex flex-row gap-x-[1vw]">
-                        <input class="DetailInput w-[55%]" type="text" placeholder="Họ tên">
-                        <input class="DetailInput w-[45%]" type="text" placeholder="Số điện thoại">
+                        <input class="DetailInput w-[55%]" type="text" placeholder="Họ tên">
+                        <input class="DetailInput w-[45%]" type="text" placeholder="Số điện thoại">
                     </div>
 
                     <!-- Line 2 -->
@@ -98,12 +98,12 @@
 
                     <!-- Line 3 -->
                     <div class="flex flex-row gap-x-[1vw]">
-                        <input class="DetailInput w-[55%]" type="text" placeholder="Địa chỉ">
+                        <input class="DetailInput w-full" type="text" placeholder="Địa chỉ (Ví dụ: 103 Vạn Phúc, phường Vạn Phúc)">
                     </div>
 
                     <!-- Line 4 -->
                     <div class="flex flex-row gap-x-[1vw]">
-                        <input class="DetailInput w-full" type="text" placeholder="Ghi chú thêm">
+                        <input class="DetailInput w-full" type="text" placeholder="Ghi chú thêm (Ví dụ: Giao hàng giờ hành chính)">
                     </div>
                 </div>
 
@@ -115,6 +115,141 @@
                         Hình thức thanh toán
                     </div>
                 </div>
+
+                <!-- Payments -->
+                <div class="flex flex-col gap-y-[2vh] w-full">
+                    
+                    <!-- 9Pay -->
+                    <div class="PaymentContent flex flex-row gap-x-[1.5vw] w-full rounded-full border-solid border-[1px] border-[#D9D9D9] px-[1vw] py-[1vh] font-normal items-center PaymentContent"> 
+                        
+                        <!-- Input -->
+                        <input onclick="NinePay()" checked class="w-[1.2vw] h-[1.2vw]" name="Payment" type="radio">
+                        
+                        <!-- Icon payment -->
+                        <div class="w-[3.5vw] h-fit">
+                            <img class="w-full h-full object-fill" src="./assets/9pay.svg" alt="9pay">
+                        </div>
+
+                        <!-- Name of payment -->
+                        <div class="text-[#D9D9D9] Payment">
+                            Ví điện tử 9Pay
+                        </div>
+                    </div>
+
+                    <!-- COD -->
+                    <div class="PaymentContent flex flex-row gap-x-[1.5vw] w-full rounded-full border-solid border-[1px] border-[#D9D9D9] px-[1vw] py-[1vh] font-normal items-center text-[1vw]">
+                        
+                        <!-- Input -->
+                        <input onclick="COD()" class="w-[1.2vw] h-[1.2vw]" name="Payment" type="radio">
+                        
+                        <!-- Icon payment -->
+                        <div class="w-[3.5vw] h-fit">
+                            <img class="w-full h-full object-fill" src="./assets/COD.svg" alt="COD">
+                        </div>
+
+                        <!-- Name of payment -->
+                        <div class="text-[#D9D9D9] flex flex-col Payment">
+                            <div>
+                                COD
+                            </div>
+                            <div>
+                                Thanh toán khi nhận hàng
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Momo -->
+                    <div class="PaymentContent flex flex-row gap-x-[1.5vw] w-full rounded-full border-solid border-[1px] border-[#D9D9D9] px-[1vw] py-[1vh] font-normal items-center text-[1vw]">
+                        
+                        <!-- Input -->
+                        <input onclick="Momo()" class="w-[1.2vw] h-[1.2vw]" name="Payment" type="radio">
+                        
+                        <!-- Icon payment -->
+                        <div class="w-[3.5vw] h-fit">
+                            <img class="w-full h-full object-fill" src="./assets/momo-icon.png" alt="momo-icon">
+                        </div>
+
+                        <!-- Name of payment -->
+                        <div class="text-[#D9D9D9] flex flex-col Payment">
+                            <div>
+                                Thanh toán Momo
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ZaloPay -->
+                    <div class="PaymentContent flex flex-row gap-x-[1.5vw] w-full rounded-full border-solid border-[1px] border-[#D9D9D9] px-[1vw] py-[1vh] font-normal items-center text-[1vw]">
+                        
+                        <!-- Input -->
+                        <input onclick="ZaloPay()" class="w-[1.2vw] h-[1.2vw]" name="Payment" type="radio">
+                        
+                        <!-- Icon payment -->
+                        <div class="w-[3.5vw] h-fit">
+                            <img class="w-full h-full object-fill" src="./assets/logo-zalopay.svg" alt="ZaloPay">
+                        </div>
+
+                        <!-- Name of payment -->
+                        <div class="text-[#D9D9D9] flex flex-col Payment">
+                            <div>
+                                Ví điện tử ZaloPay
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ShopeePay -->
+                    <div class="PaymentContent flex flex-row gap-x-[1.5vw] w-full rounded-full border-solid border-[1px] border-[#D9D9D9] px-[1vw] py-[1vh] font-normal items-center text-[1vw]">
+                        
+                        <!-- Input -->
+                        <input onclick="ShopeePay()" class="w-[1.2vw] h-[1.2vw]" name="Payment" type="radio">
+                        
+                        <!-- Icon payment -->
+                        <div class="w-[3.5vw] h-fit">
+                            <img class="w-full h-full object-fill" src="./assets/195dbf69c0ac36f26fbd_(1).png" alt="sp">
+                        </div>
+
+                        <!-- Name of payment -->
+                        <div class="text-[#D9D9D9] flex flex-col Payment">
+                            <div>
+                                Ví ShopeePay
+                            </div>
+                            <div>
+                                Giảm thêm 50k cho khách hàng lần đầu mở ví và thanh toán bằng ShopeePay
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- VNPAY -->
+                    <div class="PaymentContent flex flex-row gap-x-[1.5vw] w-full rounded-full border-solid border-[1px] border-[#D9D9D9] px-[1vw] py-[1vh] font-normal items-center text-[1vw]">
+                        
+                        <!-- Input -->
+                        <input onclick="VNPay()" class="w-[1.2vw] h-[1.2vw]" name="Payment" type="radio">
+                        
+                        <!-- Icon payment -->
+                        <div class="w-[3.5vw] h-fit">
+                            <img class="w-full h-full object-fill" src="./assets/vnpay.webp" alt="VNPAY">
+                        </div>
+
+                        <!-- Name of payment -->
+                        <div class="text-[#D9D9D9] flex flex-col Payment">
+                            <div>
+                                Thẻ ATM / Internet Banking
+                            </div>
+                            <div>
+                                Thẻ tín dụng (Credit card) / Thẻ ghi nợ (Debit card)
+                            </div>
+                            <div>
+                                VNPay QR
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button Pay -->
+                <div id="NameOfPaymentContent" class="cursor-pointer font-normal w-full bg-[#d9d9d9] rounded-full py-[3vh] mt-[5vh] flex justify-center items-center">
+                    <div id="NameOfPayment" class="NamePayment">
+                        Thanh toán (9Pay)
+                    </div>
+                </div>
             </div>
 
             <!-- Right Content -->
@@ -122,7 +257,7 @@
 
                 <!-- Title -->
                 <div class="font-extrabold text-[#000] text-[30px] my-[2vh]">
-                    Giỏ hàng
+                    Giỏ hàng
                 </div>
 
                 <!-- Code -->
@@ -159,9 +294,9 @@
 
                 <!-- Input code -->
                 <div class="w-[90%] h-[6vh] bg-[#D9D9D9] my-[3vh] rounded-full text-[#fff] relative hover:bg-black cursor-pointer">
-                    <input class="Input" type="text" placeholder="Mã giảm giá">
+                    <input class="Input" type="text" placeholder="Mã giảm giá">
                     <div class="absolute text-[16px] font-normal top-[23.5%] right-[7%]">
-                        Áp dụng
+                        Áp dụng
                     </div>
                 </div>
 
@@ -176,7 +311,7 @@
                         
                         <!-- Title -->
                         <div class="w-[50%] flex justify-start">
-                            Tạm tính
+                            Tạm tính
                         </div>
 
                         <div class="w-[50%] flex justify-end" id="TempPrice">
@@ -189,7 +324,7 @@
                         
                         <!-- Title -->
                         <div class="w-[50%] flex justify-start">
-                            Giảm giá
+                            Giảm giá
                         </div>
 
                         <div class="w-[50%] flex justify-end" id="Discount">
@@ -222,7 +357,7 @@
                         
                         <!-- Title -->
                         <div class="w-[50%] flex justify-start">
-                            Tổng
+                            Tổng
                         </div>
 
                         <div class="w-[50%] flex justify-end" id="Discount">

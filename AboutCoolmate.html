@@ -24,7 +24,7 @@
             <div class="w-full flex flex-row pt-[10px] pb-[10px] justify-center items-center gap-x-[450px]">
 
                 <!-- Icon -->
-                <div class="w-[95px] h-[36px]">
+                <div class="w-[95px] h-[36px]" onclick="Home()">
                     <img class="cursor-pointer" src="./assets/logo-coolmate.svg" alt="logo-coolmate">
                 </div>
 
@@ -46,13 +46,13 @@
 
                 <!-- List Icons -->
                 <div class="flex flex-row gap-x-[20px]">
-                    <div class="h-[20px] w-[20px]">
+                    <div class="h-[20px] w-[20px] cursor-pointer">
                         <img class="w-full h-full object-fill" src="./assets/icon-search.svg" alt="icon-search">
                     </div>
-                    <div class="h-[20px] w-[20px]">
+                    <div class="h-[20px] w-[20px] cursor-pointer">
                         <img class="w-full h-full object-fill" src="./assets/icon-account.svg" alt="icon-account">
                     </div>
-                    <div class="h-[20px] w-[20px]">
+                    <div class="h-[20px] w-[20px] cursor-pointer" onclick="Cart()">
                         <img class="w-full h-full object-fill" src="./assets/icon-cart.svg" alt="icon-cart">
                     </div>
                 </div>
@@ -70,11 +70,15 @@
         <div class="purpose">
 
             <!-- Left Content -->
-            <div class="flex flex-col gap-y-[1vh] w-[38%] h-fit items-end" style="width: 40%;">
-                <div class="text-[2.5vw] font-bold w-[50%]">
-                    Coolmate sinh ra để làm gì?
+            <div class="flex justify-center items-center w-[30vw] h-fit">
+                <div class="w-fit flex flex-col justify-center items-end">
+                    <div class="text-[2.5vw] font-bold w-[70%] leading-[6vh]">
+                        Coolmate sinh ra để làm gì?
+                    </div>
+                    <div class="w-full h-fit">
+                        <img class="w-full h-full object-fill" src="./assets/purpose.webp" alt="purpose">
+                    </div>
                 </div>
-                <img class="w-[30vw] h-fit" src="./assets/purpose.webp" alt="purpose">
             </div>
 
             <!-- Right Content -->
@@ -91,19 +95,20 @@
             </div>
         </div>
 
+        <!-- Poster 2 -->
         <div class="bgBlack">
-            <h2 style="color: #f9f86c; font-size: 20;">
+            <h2 style="color: #f9f86c; font-size: 24px;">
                 <span class="txtWhite">“ </span>
                     Coolmate sẽ trở thành điển hình về mô hình DOANH NGHIỆP TRÁCH NHIỆM
                     <br>
                     bằng cách kinh doanh tử tế, có lợi nhuận và mang lại những giá trị thiết thực và lâu dài
                     <br>
                     cho khách hàng, cho nhân viên, cho đối tác, cho cộng đồng , cho môi trường và cho cổ đông
-                <span class="txtWhite">“ </span>
-                <h4 class="txtWhite">Nhu Phạm, CEO & Founder Coolmate</h4>
+                <div class="mt-[5vh] txtWhite text-[14px]">Nhu Phạm, CEO & Founder Coolmate</div>
             </h2>
         </div>
 
+        <!-- Poster 3 -->
         <div class="blockHori">
             <div class="imgCSKH">
                 <img src="./assets/CSKH.jpg" alt = 'team CSKH' style="border-radius: 40px;">
@@ -111,8 +116,8 @@
             </div>
             
             <div class="contentCSKH">
-                <h2 class="txtBlue">Câu chuyện dịch vụ khách hàng của Coolmate</h2>
-                <div style="top: 5px">
+                <div class="txtBlue text-[30px] w-[60%] font-bold">Câu chuyện dịch vụ khách hàng của Coolmate</div>
+                <div class="text-[13px] font-normal mt-[2vh] text-justify">
                     <div>Theo một khảo sát gần đây nhất của Coolmate tự thực hiện thì có tới 51% khách hàng quyết định mua sắm ở Coolmate vì ấn tượng với dịch vụ khách hàng. 94% khách hàng sẵn sàng giới thiệu Coolmate với những người khác.</div>
                     <br>
                     <div>Ở Coolmate, chúng tôi tin rằng việc bán một gói hàng đó là bán cả một trải nghiệm mua sắm. Coolmate có kỳ vọng trở thành một thương hiệu điển hình về việc hướng tới khách hàng một cách sâu sắc tại Việt Nam. Với mong muốn góp một phần nhỏ thay đổi nhận thức của các doanh nghiệp trong việc mang tới những trải nghiêm tốt hơn cho khách hàng, đặc biệt trong lĩnh vực Thương Mại Điện Tử.</div>
@@ -126,98 +131,368 @@
             </div>
         </div>
 
-        <div >
-            <h2 class="txtBlue">Câu chuyện mô hình doanh nghiệp CÓ TRÁCH NHIỆM Coolmate đang hướng tới</h2>
-            <div class="blockHori">
-                <div class="story">
-                    <h3 class="txtTitle">#1. Với Khách Hàng</h3>
-                    <div>Coolmate kỳ vọng mang lại sản phẩm chất lượng hơn nhờ mô hình quản lý chuỗi cung ứng từ gốc (với ngành may mặc đó là từ sợi), Coolmate cũng có các đối tác ở quy mô toàn cầu, và chất lượng về nguyên liệu đạt tiêu chuẩn cao trong ngành may mặc, có thể so sánh với các thương hiệu lớn và lâu đời.</div>
-                    <br>
-                    <div>Ngoài ra mô hình bán hàng trực tiếp (Ecommerce D2C) cho phép Coolmate được đầu tư nhiều hơn cho phần sản xuất thay vì phải liên tục cắt giảm giá vốn như các mô hình truyền thống! Thực tế khách hàng sẽ thấy được chất lượng các sản phẩm Coolmate đã cải thiện đáng kể trong năm gần đây và chắc chắn trong tương lai nữa.</div>
-                    <br>
-                    <div>Coolmate kỳ vọng mang lại giá cả tốt hơn cho khách hàng nhờ vào mô hình bán hàng trực tiếp thông qua nền tảng TMĐT. Thay vì việc phải bán giá sản phẩm x4-x6 lần giá vốn như truyền thống thì Coolmate thường là x1.8-x2.5 lần mà chúng tôi vẫn có phần lời nhất định. Ngoài ra Coolmate còn hướng tới mang lại một trải nghiệm mua sắm tốt hơn dành cho khách hàng nhờ vào việc tập trung rất nhiều vào dịch vụ khách hàng. <a href="https://www.coolmate.me/page/11-dich-vu-tai-coolmate-co-the-ban-chua-biet" class="txtLink">(Tham khảo 11 cam kết của Coolmate dành cho khách hàng)</a>.</div>
+        <!-- Poster 4 -->
+        <div class="w-full flex justify-center items-center">
+
+            <!-- Content -->
+            <div class="w-full flex flex-col justify-center items-center">
+
+                <!-- Title -->
+                <div class="txtBlue font-semibold leading-[40px] text-[30px]">
+                    Câu chuyện mô hình doanh nghiệp CÓ TRÁCH NHIỆM Coolmate đang hướng tới
                 </div>
-                <div>
-                    <img src="./assets/sp.png" alt="image">
-                    <h4 class="txtLink">Ảnh tại Coolmate Hub</h4>
+
+                <!-- Content 1 -->
+                <div class="blockHori">
+
+                    <!-- Text -->
+                    <div class="story">
+                        <div class="font-bold text-[25px]">
+                            #1. Với Khách Hàng
+                        </div>
+
+                        <div class="text-justify text-[15px]">
+                            Coolmate kỳ vọng mang lại sản phẩm chất lượng hơn nhờ mô hình quản lý chuỗi cung ứng từ gốc (với ngành may
+                            mặc đó là từ sợi), Coolmate cũng có các đối tác ở quy mô toàn cầu, và chất lượng về nguyên liệu đạt tiêu
+                            chuẩn cao trong ngành may mặc, có thể so sánh với các thương hiệu lớn và lâu đời.
+                        </div>
+
+                        <div class="text-justify text-[15px]">
+                            Ngoài ra mô hình bán hàng trực tiếp (Ecommerce D2C) cho phép Coolmate được đầu tư nhiều hơn cho phần sản 
+                            xuất thay vì phải liên tục cắt giảm giá vốn như các mô hình truyền thống! Thực tế khách hàng sẽ thấy được 
+                            chất lượng các sản phẩm Coolmate đã cải thiện đáng kể trong năm gần đây và chắc chắn trong tương lai nữa.
+                        </div>
+
+                        <div class="text-justify text-[15px]">
+                            Coolmate kỳ vọng mang lại giá cả tốt hơn cho khách hàng nhờ vào mô hình bán hàng trực tiếp thông qua nền 
+                            tảng TMĐT. Thay vì việc phải bán giá sản phẩm x4-x6 lần giá vốn như truyền thống thì Coolmate thường là 
+                            x1.8-x2.5 lần mà chúng tôi vẫn có phần lời nhất định. Ngoài ra Coolmate còn hướng tới mang lại một trải 
+                            nghiệm mua sắm tốt hơn dành cho khách hàng nhờ vào việc tập trung rất nhiều vào dịch vụ khách hàng. 
+                            <a href="https://www.coolmate.me/page/11-dich-vu-tai-coolmate-co-the-ban-chua-biet" class="txtLink">(Tham khảo 11 cam kết của Coolmate dành cho khách hàng)</a>.
+                        </div>
+                    </div>
+
+                    <div class="image">
+                        <img class="w-full h-full" src="./assets/sp.png" alt="image">
+                        <h4 class="txtLink">Ảnh tại Coolmate Hub</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="blockHori">
-                <div>
-                    <h3 class="txtTitle">#2. Với Nhân Viên Coolmate</h3>
-                    <div>Coolmate kỳ vọng sẽ xây dựng được một tổ chức cởi mở, một môi trường năng động với một văn hóa riêng (tham khảo văn hóa Coolmate). Và ở đó các bạn trẻ sẽ phát huy hết khả năng của mình, và nhận được những phần lương, thưởng xứng đáng. Ngoài lương thì các bạn nhân viên của Coolmate còn nhận được các ESOP (cổ phần thưởng) hàng năm nếu có đóng góp tốt.</div>
+
+                <!-- Content 2 -->
+                <div class="blockHori">
+
+                    <!-- Text -->
+                    <div class="story">
+                        <div class="font-bold text-[25px]">
+                            #2. Với Nhân Viên Coolmate
+                        </div>
+                        <div class="text-justify text-[15px]">
+                            Coolmate kỳ vọng sẽ xây dựng được một tổ chức cởi mở, một môi trường năng động với một văn hóa riêng 
+                            (tham khảo văn hóa Coolmate). Và ở đó các bạn trẻ sẽ phát huy hết khả năng của mình, và nhận được những 
+                            phần lương, thưởng xứng đáng. Ngoài lương thì các bạn nhân viên của Coolmate còn nhận được các ESOP 
+                            (cổ phần thưởng) hàng năm nếu có đóng góp tốt.
+                        </div>
+                    </div>
+
+                    <!-- Image -->
+                    <div class="image">
+                        <img class="w-full h-full" src="./assets/NV.png">
+                        <h4 class="txtLink">Ảnh các bạn nhân viên HCM vào sinh nhật Coolmate 3</h4>
+                    </div>
                 </div>
-                <div>
-                    <img src="./assets/NV.png">
-                    <h4 class="txtLink">Ảnh các bạn nhân viên HCM vào sinh nhật Coolmate 3</h4>
+
+                <!-- Content 3 -->
+                <div class="blockHori">
+
+                    <!-- Text -->
+                    <div class="story">
+                        <div class="font-bold text-[25px]">
+                            #3. Với Đối Tác Coolmate
+                        </div>
+                        <div class="text-justify text-[15px]">
+                            Coolmate làm trong ngày may mặc. Một ngành mà là thế mạnh của Việt Nam, tuy nhiên thì đời sống của những 
+                            người công nhân may chưa bao giờ được đảm bảo đủ tốt. Việc giảm chi phí gia công để tăng sức cạnh tranh 
+                            cho sản phẩm là chiến lược được các thương hiệu lớn liên tục áp dụng. Coolmate muốn thay đổi điều đó bằng 
+                            việc luôn cố gắng trả nhiều hơn cho những người thợ may nếu có thể (Yêu cầu các đối tác phải đóng bảo hiểm 
+                            cho người lao động là một ví dụ).
+                        </div>
+                        <div class="text-justify text-[15px]">
+                            Ngoài ra thì Coolmate cũng có nhiều hoạt động hỗ trợ các bạn công nhân may khác như chăm sóc các bạn F0, 
+                            hỗ trợ giai đoạn thiếu việc làm, hay là việc theo đuổi mô hình sản xuất chất lượng, thay vì giá rẻ. 
+                            Coolmate kỳ vọng rằng sẽ góp một phần vào việc thay đổi nhận thức của các thương hiệu về mối quan hệ với 
+                            các xưởng sản xuất, và đời sống người lao động. Mô hình lao động giá rẻ của ngành dệt may không phải là 
+                            mô hình bền vững và có giá trị lâu dài trong tương lai.
+                        </div>
+                    </div>
+
+                    <!-- Image -->
+                    <div class="image">
+                        <img class="w-full h-full" src="./assets/parter1.jpg">
+                        <h4 class="txtLink">Ảnh tại các xưởng sản xuất đối tác</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="blockHori">
-                <div>
-                    <h3 class="txtTitle">#3. Với Đối Tác Coolmate</h3>
-                    <div>Coolmate làm trong ngày may mặc. Một ngành mà là thế mạnh của Việt Nam, tuy nhiên thì đời sống của những người công nhân may chưa bao giờ được đảm bảo đủ tốt. Việc giảm chi phí gia công để tăng sức cạnh tranh cho sản phẩm là chiến lược được các thương hiệu lớn liên tục áp dụng. Coolmate muốn thay đổi điều đó bằng việc luôn cố gắng trả nhiều hơn cho những người thợ may nếu có thể (Yêu cầu các đối tác phải đóng bảo hiểm cho người lao động là một ví dụ).</div>
-                    <div>Ngoài ra thì Coolmate cũng có nhiều hoạt động hỗ trợ các bạn công nhân may khác như chăm sóc các bạn F0, hỗ trợ giai đoạn thiếu việc làm, hay là việc theo đuổi mô hình sản xuất chất lượng, thay vì giá rẻ. Coolmate kỳ vọng rằng sẽ góp một phần vào việc thay đổi nhận thức của các thương hiệu về mối quan hệ với các xưởng sản xuất, và đời sống người lao động. Mô hình lao động giá rẻ của ngành dệt may không phải là mô hình bền vững và có giá trị lâu dài trong tương lai.</div>
+
+                <!-- Content 4 -->
+                <div class="blockHori">
+
+                    <!-- Text -->
+                    <div class="story">
+                        <div class="font-bold text-[25px]">
+                            #4. Với Môi Trường
+                        </div>
+                        <div class="text-justify text-[15px]">
+                            Dệt may là ngành gây ra ô nhiễm môi trường lớn thứ 2 trên thế giới chỉ sau ngành giấy. Coolmate đang cố 
+                            gắng chuyển mình theo hướng “Substainability” - Thời trang bền vững hơn ở hiện tại và trong tương lai. 
+                            Bằng chứng là dòng sản phẩm Excool với sợi Sorona thân thiện với môi trường hơn nhiều so với sợi Polyester 
+                            thường. Dự án kết hợp với Cleandye, công nghệ nhuộm sạch, không nước cũng tạo ra các sản phẩm thân thiện 
+                            hơn với môi trường. Với dòng các sản phẩm thể thao Coolmate hướng tới việc ứng dụng trên 50% sợi tái chế 
+                            (Recycled Polyester) trong các dòng sản phẩm của mình trong năm 2022 và hướng tới 99% trong năm 2023 trở đi.
+                        </div>
+                    </div>
+
+                    <!-- Image -->
+                    <div class="image">
+                        <img class="w-full h-full" src="./assets/envi.png">
+                        <h4 class="txtLink">Ảnh một công đoạn trong quá trình nhuộm sạch CleanDye</h4>
+                    </div>
                 </div>
-                <div>
-                    <img src="./assets/parter1.jpg">
-                    <h4 class="txtLink">Ảnh tại các xưởng sản xuất đối tác</h4>
+
+                <!-- Content 5 -->
+                <div class="blockHori">
+
+                    <!-- Text -->
+                    <div class="story">
+                        <div class="font-bold text-[25px]">
+                            #5. Với Các Cổ Đông
+                        </div>
+                        <div class="text-justify text-[15px]">
+                            Việc duy trì một mô hình kinh doanh bài bản, có lợi nhuận ổn định và tăng trưởng như là một cam kết của 
+                            Coolmate cho cổ đông về việc có được những lợi nhuận và sự tăng giá trị trong dài hạn.
+                        </div>
+                        <div class="text-justify text-[15px]">
+                            Đội ngũ Coolmate có rất nhiều những dự định và những ước mơ lớn, tuy nhiên thì chúng tôi bắt đầu từ những 
+                            thứ nhỏ nhất, và bước từng bước trên chặng đường đi của mình, chăm chỉ và cố gắng làm tốt từng ngày. 
+                            Coolmate không coi bất cứ ai là đối thủ cạnh tranh ngoài chính bản thân mình. “Tốt hơn mỗi ngày - Better 
+                            Everyday” là thứ mà chúng tôi theo đuổi.
+                        </div>
+                    </div>
+                    
+                    <!-- Image -->
+                    <div class="image">
+                        <img class="w-full h-full" src="./assets/investor.jpg">
+                        <h4 class="txtLink">Ảnh đội ngũ Coolmate và Nhà đầu tư 500 Startup</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="blockHori">
-                <div>
-                    <h3 class="txtTitle">#4. Với Môi Trường</h3>
-                    <div>Dệt may là ngành gây ra ô nhiễm môi trường lớn thứ 2 trên thế giới chỉ sau ngành giấy. Coolmate đang cố gắng chuyển mình theo hướng “Substainability” - Thời trang bền vững hơn ở hiện tại và trong tương lai. Bằng chứng là dòng sản phẩm Excool với sợi Sorona thân thiện với môi trường hơn nhiều so với sợi Polyester thường. Dự án kết hợp với Cleandye, công nghệ nhuộm sạch, không nước cũng tạo ra các sản phẩm thân thiện hơn với môi trường. Với dòng các sản phẩm thể thao Coolmate hướng tới việc ứng dụng trên 50% sợi tái chế (Recycled Polyester) trong các dòng sản phẩm của mình trong năm 2022 và hướng tới 99% trong năm 2023 trở đi.</div>
-                </div>
-                <div>
-                    <img src="./assets/envi.png">
-                    <h4 class="txtLink">Ảnh một công đoạn trong quá trình nhuộm sạch CleanDye</h4>
-                </div>
-            </div>
-            <div class="blockHori">
-                <div>
-                    <h3 class="txtTitle">#5. Với Các Cổ Đông</h3>
-                    <div>Việc duy trì một mô hình kinh doanh bài bản, có lợi nhuận ổn định và tăng trưởng như là một cam kết của Coolmate cho cổ đông về việc có được những lợi nhuận và sự tăng giá trị trong dài hạn.</div>
-                    <div>Đội ngũ Coolmate có rất nhiều những dự định và những ước mơ lớn, tuy nhiên thì chúng tôi bắt đầu từ những thứ nhỏ nhất, và bước từng bước trên chặng đường đi của mình, chăm chỉ và cố gắng làm tốt từng ngày. Coolmate không coi bất cứ ai là đối thủ cạnh tranh ngoài chính bản thân mình. “Tốt hơn mỗi ngày - Better Everyday” là thứ mà chúng tôi theo đuổi.</div>
-                </div>
-                <div>
-                    <img src="./assets/investor.jpg">
-                    <h4 class="txtLink">Ảnh đội ngũ Coolmate và Nhà đầu tư 500 Startup</h4>
-                </div>
-            </div>
-            <div class="blockHori">
-                <div>
-                    <h3 class="txtTitle">#6. Với Cộng Đồng Xã Hội</h3>
-                    <div>Coolmate cố gắng mở rộng, tạo nhiều việc làm và đóng thuế đầy đủ như một phần đóng góp cho sự phát triển chung của xã hội.</div>
-                    <div>Quan điểm của Coolmate về việc làm các hoạt động đóng góp cho cộng đồng:</div>
-                    <div>“Một doanh nghiệp không cần phải lớn, mới có thể làm điều ý nghĩa”. Chính vì vậy Coolmate đã mở ra dự án Care & Share với mục tiêu góp phần hỗ trợ cho các trẻ em khó khăn ở Việt Nam ngay từ khi mới thành lập công ty được 1 năm. <a href="https://www.coolmate.me/collection/care-and-share" class="txtLink">(Tham khảo thêm dự án Care & Share)</a>. Chắc chắn trong thời gian tới sẽ được đẩy mạnh hơn và hỗ trợ được nhiều hơn.</div>
-                </div>
-                <div>
-                    <img src="./assets/social.jpg">
-                    <h4 class="txtLink">Ảnh đội ngũ Coolmate và Nhà đầu tư 500 Startup</h4>
+
+                <!-- Content 6 -->
+                <div class="blockHori">
+
+                    <!-- Text -->
+                    <div class="story">
+                        <div class="font-bold text-[25px]">
+                            #6. Với Cộng Đồng Xã Hội
+                        </div>
+                        <div class="text-justify text-[15px]">
+                            Coolmate cố gắng mở rộng, tạo nhiều việc làm và đóng thuế đầy đủ như một phần đóng góp cho sự phát triển 
+                            chung của xã hội.
+                        </div>
+                        <div class="text-justify text-[15px]">
+                            Quan điểm của Coolmate về việc làm các hoạt động đóng góp cho cộng đồng:
+                        </div>
+                        <div class="text-justify text-[15px]">
+                            "Một doanh nghiệp không cần phải lớn, mới có thể làm điều ý nghĩa”. Chính vì vậy Coolmate đã mở ra dự án 
+                            Care & Share với mục tiêu góp phần hỗ trợ cho các trẻ em khó khăn ở Việt Nam ngay từ khi mới thành lập 
+                            công ty được 1 năm. 
+                            <a href="https://www.coolmate.me/collection/care-and-share" class="txtLink">
+                            (Tham khảo thêm dự án Care & Share)</a>. Chắc chắn trong thời gian tới sẽ được đẩy mạnh hơn và hỗ trợ được 
+                            nhiều hơn.
+                        </div>
+                    </div>
+
+                    <!-- Image -->
+                    <div class="image">
+                        <img class="w-full h-full" src="./assets/social.jpg">
+                        <h4 class="txtLink">Ảnh đội ngũ Coolmate và Nhà đầu tư 500 Startup</h4>
+                    </div>
                 </div>
             </div>
         </div>
 
+        <!-- Poster 5 -->
         <div class="blockThank">
             Trong cuộc sống có quá nhiều sự lựa chọn,
             <br>
             cảm ơn bạn đã lựa chọn Coolmate!
-            <br>
-            “
         </div>
 
+        <!-- Poster 6 -->
         <div class="moreInfo">
-            <div>
-                <h3>Tìm hiểu thêm về Coolmate</h3>
-                <a class="txtLink" href="https://coolmate.typeform.com/to/lU2oprGc?typeform-source=www.coolmate.me">để lại câu hỏi nhé</a>
+
+            <!-- Item 1 -->
+            <div class="item">
+                <div class="text-[22px] font-extrabold">
+                    Tìm hiểu thêm về Coolmate
+                </div>
+                <a class="underline text-[20px]" href="https://coolmate.typeform.com/to/lU2oprGc?typeform-source=www.coolmate.me">để lại câu hỏi nhé</a>
             </div>
-            <div>
-                <h3>Trải nghiệm mua sắm</h3>
-                <a class="txtLink">với Coolmate</a>
+
+            <!-- Item 2 -->
+            <div class="item">
+                <div class="text-[22px] font-extrabold">
+                    Trải nghiệm mua sắm
+                </div>
+                <a class="underline text-[20px]">với Coolmate</a>
             </div>
-            <div>
-                <h3>Nếu bạn thích</h3>
-                <a class="txtLink" href="https://www.coolmate.me/lp/coolmate-101">gia nhập Coolmate</a>
+
+            <!-- Item 3 -->
+            <div class="item">
+                <div class="text-[22px] font-extrabold">
+                    Nếu bạn thích
+                </div>
+                <a class="underline text-[20px]" href="https://www.coolmate.me/lp/coolmate-101">gia nhập Coolmate</a>
+            </div>
+        </div>
+
+        <div class="my-[5vh]"></div>
+
+        <!-- Footer -->
+        <div class="w-full h-fit flex flex-row justify-center items-start bg-[#000] py-[25px]">
+            <div class="w-[16%] h-fit flex flex-col gap-y-[20px]">
+                <div class="text-[#fff] font-bold text-[13px]">
+                    Khám phá COOLMATE
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Áo Polo
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Áo T-shirt
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Áo Sơ mi
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Quần
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Tất (Vớ)
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Mũ (Nón)
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Phụ Kiện Khác
+                </div>
+            </div>
+    
+            <div class="w-[16%] h-fit flex flex-col gap-y-[15px]">
+                <div class="text-[#fff] font-bold text-[13px]">
+                    Dịch vụ khách hàng
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Hỏi đáp - FAQs
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Chính sách đổi trả 60 ngày
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Thành viên Coolclub
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Khách hàng hài lòng 100%
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Chính sách khuyến mãi
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Chính sách giao hàng
+                </div>
+                <div class="text-[#fff] font-bold text-[13px] mt-[10px]">
+                    Kiến thức mặc đẹp
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Hướng dẫn chọn size
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Blog
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Group mặc đẹp sống chất
+                </div>
+            </div>
+
+            <div class="w-[16%] h-fit flex flex-col gap-y-[15px]">
+                <div class="text-[#fff] font-bold text-[13px]">
+                    Tài liệu - Tuyển dụng
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Tuyển dụng
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Đăng ký bản quyền
+                </div>
+                <div class="text-[#fff] font-bold text-[13px] mt-[10px]">
+                    Về COOLMATE
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Câu chuyện về Coolmate
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Nhà máy
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    CoolClub
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Care & Share
+                </div>
+            </div>
+
+            <div class="w-[14%] h-fit flex flex-col gap-y-[15px]">
+                <div class="text-[#fff] font-bold text-[13px]">
+                    Địa chỉ liên hệ
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    HUB Hà Nội: Số 103, Đường Vạn Phúc, Phường Vạn Phúc, Quận Hà Đông, TP. Hà Nội
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    HUB Tp HCM: Lầu 1, Số 163 Trần Trọng Cung, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh
+                </div>
+            </div>
+
+            <div class="w-[30%] h-fit flex flex-col gap-y-[15px] pl-[50px]">
+                <div class="text-[#fff] font-extrabold text-[20px]">
+                    COOLMATE lắng nghe bạn!
+                </div>
+                <div class="text-[#fff] text-[13px]">
+                    Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ khách hàng để có thể nâng cấp trải nghiệm dịch vụ và sản phẩm tốt hơn nữa.
+                </div>
+                <div class="bg-[#2f5acf] text-[#fff] w-fit text-[15px] px-[40px] font-bold py-[13px] rounded-full my-[20px] hover:bg-white hover:text-[#000]">
+                    Gửi Ý Kiến
+                </div>
+
+                <div class="flex flex-row w-full items-center gap-x-[20px]">
+                    <div class="w-[30px] h-fit">
+                        <img class="w-full h-full object-fill" src="./assets/icon-hotline.svg" alt="icon-hotline">
+                    </div>
+                    <div class="text-[#fff] font-bold text-[15px]">
+                        Hotline <br/> 1900.272737 (028.7777.2737)
+                    </div>
+                </div>
+
+                <div class="flex flex-row w-full items-center gap-x-[20px]">
+                    <div class="w-[30px] h-fit">
+                        <img class="w-full h-full object-fill" src="./assets/icon-email.svg" alt="icon-email">
+                    </div>
+                    <div class="text-[#fff] font-bold text-[15px]">
+                        Email <br/> Cool@coolmate.me
+                    </div>
+                </div>
+
+                <div class="flex flex-row gap-x-[80px] items-center mt-[20px]">
+                    <img src="./assets/icon-facebook.svg" alt="icon-facebook">
+                    <img src="./assets/icon-instar.svg" alt="icon-instar">
+                    <img src="./assets/icon-youtube.svg" alt="icon-youtube">
+                </div>
             </div>
         </div>
     </div>
