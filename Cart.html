@@ -11,10 +11,28 @@
 <body class="m-0 p-0 font-[Roboto] bg-[white] h-[100vh] text-[13px]">
     <script src="./Cart.js"></script>
 
+    <!-- Login Form -->
+    <div class="PopUpLogin" id="PopUp">
+        <div class="Overlay"></div>
+        <div class="ContentLogin">
+            <button class="Close" onclick="Close()">X</button>
+            <div class="font-extrabold text-[30px] mb-[2vh]">
+                Đăng nhập
+            </div>
+            <input class="InputText" type="text" placeholder="Email/SĐT của bạn">
+            <input class="InputText" type="text" placeholder="Mật khẩu">
+            <button class="Login" id="btnLogin" onclick="LoginAccount()">Đăng nhập</button>
+            <div class="text-[16px] text-[#2f5acf] hover:text-[#000] cursor-pointer mt-7">
+                Đăng ký tài khoản mới
+            </div>
+        </div>
+    </div>
+
     <!-- All content -->
-    <div class="flex justify-center items-center flex-col w-full h-fit">
+    <div class="flex justify-center items-center flex-col w-full">
+        
         <!-- Header -->
-        <div class="w-full font-bold">
+        <div class="w-full font-bold fixed top-0 left-0 z-[1] bg-white">
 
             <!-- Pre Header -->
             <div class="text-center leading-[16px] bg-[#F9F86C] pt-[7px] pb-[7px] w-full text-[13px] font-bold">
@@ -31,7 +49,7 @@
 
                 <!-- Main Menu -->
                 <div class="w-fit flex flex-row gap-x-[60px] font-bold">
-                    <div class="cursor-pointer" onclick="Home()">
+                    <div class="text-[red] cursor-pointer" onclick="Home()">
                         Home
                     </div>
                     <div class="cursor-pointer" onclick="Product()">
@@ -40,31 +58,28 @@
                     <div class="cursor-pointer" onclick="AboutCoolmate()">
                         About Coolmate
                     </div>
-                    <div class="text-[red] cursor-pointer" onclick="Cart()">
+                    <div class="cursor-pointer" onclick="Cart()">
                         Cart    
                     </div>
                 </div>
 
                 <!-- List Icons -->
                 <div class="flex flex-row gap-x-[20px]">
-                    <div class="h-[20px] w-[20px]">
-                        <img class="w-full h-full object-fill cursor-pointer" src="./assets/icon-search.svg" alt="icon-search">
+                    <div class="h-[20px] w-[20px] cursor-pointer">
+                        <img class="w-full h-full object-fill" src="./assets/icon-search.svg" alt="icon-search">
                     </div>
-                    <div class="h-[20px] w-[20px]">
-                        <img class="w-full h-full object-fill cursor-pointer" src="./assets/icon-account.svg" alt="icon-account">
+                    <div class="h-[20px] w-[20px] cursor-pointer" onclick="Login()">
+                        <img class="w-full h-full object-fill" src="./assets/icon-account.svg" alt="icon-account">
                     </div>
-                    <div class="h-[20px] w-[20px]" onclick="Cart()">
-                        <img class="w-full h-full object-fill cursor-pointer" src="./assets/icon-cart.svg" alt="icon-cart">
+                    <div class="h-[20px] w-[20px] cursor-pointer" onclick="Cart()">
+                        <img class="w-full h-full object-fill" src="./assets/icon-cart.svg" alt="icon-cart">
                     </div>
                 </div>
             </div>
-
-            <!-- Line -->
-            <div class="h-[1px] w-full bg-[#D9D9D9]"/>
         </div>
 
         <!-- All content -->
-        <div class="flex flex-row">
+        <div class="flex flex-row mt-[11vh]">
 
             <!-- Left Content -->
             <div class="w-[55%] py-[2vh] border-r-[1px] border-[#D9D9D9] border-solid relative text-[17px] pl-[2vw] pr-[1vw]">

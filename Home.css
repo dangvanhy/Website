@@ -3,6 +3,9 @@
 body{
     width: 100%;
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
 }
 
 .Bar{
@@ -214,4 +217,76 @@ input[name="SlideButton"]{
 
 .ProductContainer:hover .Size{
     display: flex;
+}
+
+.PopUpLogin{
+    width: fit-content;
+    height: fit-content;
+    display: none;
+}
+
+.Overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 4;
+}
+
+.ContentLogin{
+    border-radius: 15px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    width: 450px;
+    height: 400px;
+    box-sizing: border-box;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ContentLogin .Input{
+    outline: none;
+    width: 80%;
+    padding: 0.7vh 0vw;
+    border-radius: 9999px;
+    border: 1px solid #D9D9D9;
+    padding-left: 1vw;
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+    margin-top: 3vh;
+}
+
+.ContentLogin .Login{
+    background-color: black;
+    width: 80%;
+    color: white;
+    padding: 1vh 0vw;
+    border-radius: 9999px;
+    font-size: 19px;
+    margin-top: 5vh;
+}
+
+.ContentLogin .Login:hover{
+    background-color: rgb(169, 169, 169);
+    color: black;
+}
+
+.ContentLogin .Close{
+    margin: 1.5vh 0 1.5vh 90%;
+    font-size: 16px;
+    color: rgb(44, 44, 44);
+    transition: all 0.2s ease-in-out;
+}
+
+.ContentLogin .Close:hover{
+    transform: scale(1.2);
 }

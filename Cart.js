@@ -29,17 +29,31 @@ function ShopeePay(){
 }
 
 function Cart(){
-    window.location.href = "file:///D:/workspace/Website/Cart.html";
+    window.location.href = "./Cart.html";
 }
 
 function Home(){
-    window.location.href = "file:///D:/workspace/Website/Home.html";
+    window.location.href = "./Home.html";
 }
 
 function AboutCoolmate(){
-    window.location.href = "file:///D:/workspace/Website/AboutCoolmate.html";
+    window.location.href = "./AboutCoolmate.html";
 }
 
 function Product(){
-    window.location.href = "file:///D:/workspace/Website/Product.html";
+    window.location.href = "./Product.html";
+}
+
+function Login(){
+    const PopUpLogin = document.getElementById("PopUp");
+    PopUpLogin.style.display = "block";
+}
+
+function Close(){
+    const PopUpLogin = document.getElementById("PopUp");
+    PopUpLogin.style.display = "none";
+}
+
+function LoginAccount(){
+
 }

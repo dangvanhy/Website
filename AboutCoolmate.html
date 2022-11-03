@@ -9,11 +9,28 @@
 <body>
     <script src="./AboutCoolmate.js"></script>
 
+    <!-- Login Form -->
+    <div class="PopUpLogin" id="PopUp">
+        <div class="Overlay"></div>
+        <div class="ContentLogin">
+            <button class="Close" onclick="Close()">X</button>
+            <div class="font-extrabold text-[30px] mb-[2vh]">
+                Đăng nhập
+            </div>
+            <input class="Input" type="text" placeholder="Email/SĐT của bạn">
+            <input class="Input" type="text" placeholder="Mật khẩu">
+            <button class="Login" id="btnLogin" onclick="LoginAccount()">Đăng nhập</button>
+            <div class="text-[16px] text-[#2f5acf] hover:text-[#000] cursor-pointer mt-7">
+                Đăng ký tài khoản mới
+            </div>
+        </div>
+    </div>
+
     <!-- All content -->
     <div class="m-0 p-0 font-[Roboto] bg-[white] h-[100vh] text-[13px]">
 
         <!-- Header -->
-        <div class="w-full font-bold">
+        <div class="w-full font-bold fixed top-0 left-0 z-[3] bg-white">
 
             <!-- Pre Header -->
             <div class="text-center leading-[16px] bg-[#F9F86C] pt-[7px] pb-[7px] w-full text-[13px] font-bold">
@@ -49,7 +66,7 @@
                     <div class="h-[20px] w-[20px] cursor-pointer">
                         <img class="w-full h-full object-fill" src="./assets/icon-search.svg" alt="icon-search">
                     </div>
-                    <div class="h-[20px] w-[20px] cursor-pointer">
+                    <div class="h-[20px] w-[20px] cursor-pointer" onclick="Login()">
                         <img class="w-full h-full object-fill" src="./assets/icon-account.svg" alt="icon-account">
                     </div>
                     <div class="h-[20px] w-[20px] cursor-pointer" onclick="Cart()">

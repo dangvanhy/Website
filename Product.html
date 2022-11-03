@@ -13,11 +13,28 @@
 <body class="m-0 p-0 font-[Roboto] bg-[white] h-[100vh] text-[13px]">
 
     <script src="./Product.js"></script>
+
+    <!-- Login Form -->
+    <div class="PopUpLogin" id="PopUp">
+        <div class="Overlay"></div>
+        <div class="ContentLogin">
+            <button class="Close" onclick="Close()">X</button>
+            <div class="font-extrabold text-[30px] mb-[2vh]">
+                Đăng nhập
+            </div>
+            <input class="Input" type="text" placeholder="Email/SĐT của bạn">
+            <input class="Input" type="text" placeholder="Mật khẩu">
+            <button class="Login" id="btnLogin" onclick="LoginAccount()">Đăng nhập</button>
+            <div class="text-[16px] text-[#2f5acf] hover:text-[#000] cursor-pointer mt-7">
+                Đăng ký tài khoản mới
+            </div>
+        </div>
+    </div>
     
     <div class="flex justify-center items-center flex-col w-full ">
 
         <!-- Header -->
-        <div class="w-full font-bold">
+        <div class="w-full font-bold fixed top-0 left-0 z-[1] bg-white">
 
             <!-- Pre Header -->
             <div class="text-center leading-[16px] bg-[#F9F86C] pt-[7px] pb-[7px] w-full text-[13px] font-bold">
@@ -53,7 +70,7 @@
                     <div class="h-[20px] w-[20px] cursor-pointer">
                         <img class="w-full h-full object-fill" src="./assets/icon-search.svg" alt="icon-search">
                     </div>
-                    <div class="h-[20px] w-[20px] cursor-pointer">
+                    <div class="h-[20px] w-[20px] cursor-pointer" onclick="Login()">
                         <img class="w-full h-full object-fill" src="./assets/icon-account.svg" alt="icon-account">
                     </div>
                     <div class="h-[20px] w-[20px] cursor-pointer" onclick="Cart()">
@@ -64,7 +81,7 @@
         </div>
 
         <!-- Collection Option -->
-        <div class="w-full h-[250px] flex flex-row justify-center px-64 gap-4 items-center border ">
+        <div class="w-full h-[250px] flex flex-row justify-center px-64 gap-4 items-center border mt-[10vh]">
 
             <!-- Clothes Option -->
             <div class="ClothesOption">
@@ -3554,6 +3571,147 @@
                 <div class="w-full justify-center items-center flex flex-col gap-y-[5px]">
                     <div class="SeeMore">Xem thêm</div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="w-full h-fit flex flex-row justify-center items-start mt-[200px] bg-[#000] py-[25px]">
+        <div class="w-[16%] h-fit flex flex-col gap-y-[20px]">
+            <div class="text-[#fff] font-bold text-[13px]">
+                Khám phá COOLMATE
+            </div>
+            <div class="text-[#fff] text-[13px]">
+                Áo Polo
+            </div>
+            <div class="text-[#fff] text-[13px]">
+                Áo T-shirt
+            </div>
+            <div class="text-[#fff] text-[13px]">
+                Áo Sơ mi
+            </div>
+            <div class="text-[#fff] text-[13px]">
+                Quần
+            </div>
+            <div class="text-[#fff] text-[13px]">
+                Tất (Vớ)
+            </div>
+            <div class="text-[#fff] text-[13px]">
+                Mũ (Nón)
+            </div>
+            <div class="text-[#fff] text-[13px]">
+                Phụ Kiện Khác
+            </div>
+        </div>
+
+        <div class="w-[16%] h-fit flex flex-col gap-y-[15px]">
+            <div class="text-[#fff] font-bold text-[13px]">
+                Dịch vụ khách hàng
+            </div>
+            <div class="text-[#fff] text-[13px]">
+                Hỏi đáp - FAQs
+            </div>
+            <div class="text-[#fff] text-[13px]">
+                Chính sách đổi trả 60 ngày
+            </div>
+            <div class="text-[#fff] text-[13px]">
+                Thành viên Coolclub
+            </div>
+            <div class="text-[#fff] text-[13px]">
+                Khách hàng hài lòng 100%
+            </div>
+            <div class="text-[#fff] text-[13px]">
+                Chính sách khuyến mãi
+            </div>
+            <div class="text-[#fff] text-[13px]">
+                Chính sách giao hàng
+            </div>
+            <div class="text-[#fff] font-bold text-[13px] mt-[10px]">
+                Kiến thức mặc đẹp
+            </div>
+            <div class="text-[#fff] text-[13px]">
+                Hướng dẫn chọn size
+            </div>
+            <div class="text-[#fff] text-[13px]">
+                Blog
+            </div>
+            <div class="text-[#fff] text-[13px]">
+                Group mặc đẹp sống chất
+            </div>
+        </div>
+
+        <div class="w-[16%] h-fit flex flex-col gap-y-[15px]">
+            <div class="text-[#fff] font-bold text-[13px]">
+                Tài liệu - Tuyển dụng
+            </div>
+            <div class="text-[#fff] text-[13px]">
+                Tuyển dụng
+            </div>
+            <div class="text-[#fff] text-[13px]">
+                Đăng ký bản quyền
+            </div>
+            <div class="text-[#fff] font-bold text-[13px] mt-[10px]">
+                Về COOLMATE
+            </div>
+            <div class="text-[#fff] text-[13px]">
+                Câu chuyện về Coolmate
+            </div>
+            <div class="text-[#fff] text-[13px]">
+                Nhà máy
+            </div>
+            <div class="text-[#fff] text-[13px]">
+                CoolClub
+            </div>
+            <div class="text-[#fff] text-[13px]">
+                Care & Share
+            </div>
+        </div>
+
+        <div class="w-[14%] h-fit flex flex-col gap-y-[15px]">
+            <div class="text-[#fff] font-bold text-[13px]">
+                Địa chỉ liên hệ
+            </div>
+            <div class="text-[#fff] text-[13px]">
+                HUB Hà Nội: Số 103, Đường Vạn Phúc, Phường Vạn Phúc, Quận Hà Đông, TP. Hà Nội
+            </div>
+            <div class="text-[#fff] text-[13px]">
+                HUB Tp HCM: Lầu 1, Số 163 Trần Trọng Cung, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh
+            </div>
+        </div>
+
+        <div class="w-[30%] h-fit flex flex-col gap-y-[15px] pl-[50px]">
+            <div class="text-[#fff] font-extrabold text-[20px]">
+                COOLMATE lắng nghe bạn!
+            </div>
+            <div class="text-[#fff] text-[13px]">
+                Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ khách hàng để có thể nâng cấp trải nghiệm dịch vụ và sản phẩm tốt hơn nữa.
+            </div>
+            <div class="bg-[#2f5acf] text-[#fff] w-fit text-[15px] px-[40px] font-bold py-[13px] rounded-full my-[20px] hover:bg-white hover:text-[#000]">
+                Gửi Ý Kiến
+            </div>
+
+            <div class="flex flex-row w-full items-center gap-x-[20px]">
+                <div class="w-[30px] h-fit">
+                    <img class="w-full h-full object-fill" src="./assets/icon-hotline.svg" alt="icon-hotline">
+                </div>
+                <div class="text-[#fff] font-bold text-[15px]">
+                    Hotline <br/> 1900.272737 (028.7777.2737)
+                </div>
+            </div>
+
+            <div class="flex flex-row w-full items-center gap-x-[20px]">
+                <div class="w-[30px] h-fit">
+                    <img class="w-full h-full object-fill" src="./assets/icon-email.svg" alt="icon-email">
+                </div>
+                <div class="text-[#fff] font-bold text-[15px]">
+                    Email <br/> Cool@coolmate.me
+                </div>
+            </div>
+
+            <div class="flex flex-row gap-x-[80px] items-center mt-[20px]">
+                <img src="./assets/icon-facebook.svg" alt="icon-facebook">
+                <img src="./assets/icon-instar.svg" alt="icon-instar">
+                <img src="./assets/icon-youtube.svg" alt="icon-youtube">
             </div>
         </div>
     </div>
