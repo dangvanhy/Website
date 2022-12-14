@@ -357,3 +357,61 @@ input[name="SlideButton"]{
 .ContentLogin .Close:hover{
     transform: scale(1.2);
 }
+
+
+.PopUpSignUp{
+    width: fit-content;
+    height: fit-content;
+    display: none;
+}
+
+.ContentSignUp{
+    border-radius: 15px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    width: 450px;
+    height: 400px;
+    box-sizing: border-box;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ContentSignUp .Close{
+    margin: 1.5vh 0 1.5vh 90%;
+    font-size: 16px;
+    color: rgb(44, 44, 44);
+    transition: all 0.2s ease-in-out;
+}
+
+.ContentSignUp .Close:hover{
+    transform: scale(1.2);
+}
+
+.ContentSignUp .InputText{
+    outline: none;
+    width: 80%;
+    padding: 0.7vh 0vw;
+    border-radius: 9999px;
+    border: 1px solid #D9D9D9;
+    padding-left: 1vw;
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+    margin-top: 3vh;
+}
+
+.ContentSignUp .Login{
+    background-color: black;
+    width: 80%;
+    color: white;
+    padding: 1vh 0vw;
+    border-radius: 9999px;
+    font-size: 19px;
+    margin-top: 5vh;
+}

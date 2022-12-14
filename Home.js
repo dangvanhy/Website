@@ -179,3 +179,21 @@ function Close(){
 function LoginAccount(){
 
 }
+
+function SignUp(){
+    const SignUp = document.getElementById("SignUp");
+    const PopUpLogin = document.getElementById("PopUp");
+    SignUp.style.display = "block";
+    PopUpLogin.style.display = "none";
+}
+
+function CloseSignUp(){
+    const SignUp = document.getElementById("SignUp");
+    const PopUpLogin = document.getElementById("PopUp");
+    SignUp.style.display = "none";
+    PopUpLogin.style.display = "block";
+}
+
+function SignUpAccount(){
+    
+}

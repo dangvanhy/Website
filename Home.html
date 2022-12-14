@@ -23,9 +23,23 @@
             <input class="Input" type="text" placeholder="Email/SĐT của bạn">
             <input class="Input" type="text" placeholder="Mật khẩu">
             <button class="Login" id="btnLogin" onclick="LoginAccount()">Đăng nhập</button>
-            <div class="text-[16px] text-[#2f5acf] hover:text-[#000] cursor-pointer mt-7">
+            <div onclick="SignUp()" class="text-[16px] text-[#2f5acf] hover:text-[#000] cursor-pointer mt-7">
                 Đăng ký tài khoản mới
             </div>
+        </div>
+    </div>
+
+    <!-- Sign up Form -->
+    <div class="PopUpSignUp" id="SignUp">
+        <div class="Overlay"></div>
+        <div class="ContentSignUp">
+            <button class="Close" onclick="CloseSignUp()">X</button>
+            <div class="font-extrabold text-[30px] mb-[2vh]">
+                Đăng ký
+            </div>
+            <input class="InputText" type="text" placeholder="Email/SĐT của bạn">
+            <input class="InputText" type="text" placeholder="Mật khẩu">
+            <button class="Login" id="btnSignUp" onclick="SignUpAccount()">Đăng ký</button>
         </div>
     </div>
 
